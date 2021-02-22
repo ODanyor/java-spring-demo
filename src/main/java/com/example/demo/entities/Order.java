@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entities;
 
 import java.util.Objects;
 
@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.example.demo.constants.Status;
 
 @Entity
 @Table(name = "CUSTOMER_ORDER")
@@ -15,9 +17,9 @@ public class Order {
     private String description;
     private Status status;
 
-    Order() {}
+    public Order() {}
 
-    Order(String description, Status status) {
+    public Order(String description, Status status) {
         this.description = description;
         this.status = status;
     }

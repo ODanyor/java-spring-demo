@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.entities;
 
 import java.util.Objects;
 
@@ -13,9 +13,9 @@ public class Employee {
     private String lustName;
     private String role;
 
-    Employee() {}
+    public Employee() {}
 
-    Employee(String firstName, String lustName, String role) {
+    public Employee(String firstName, String lustName, String role) {
         this.firstName = firstName;
         this.lustName = lustName;
         this.role = role;

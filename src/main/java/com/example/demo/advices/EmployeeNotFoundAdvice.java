@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.example.demo.advices;
+
+import com.example.demo.exceptions.EmployeeNotFoundException;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

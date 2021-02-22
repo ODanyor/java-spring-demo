@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.constants;
 
 public enum Status {
     IN_PROGRESS,

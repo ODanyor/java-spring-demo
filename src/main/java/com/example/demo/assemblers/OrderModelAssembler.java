@@ -1,6 +1,10 @@
-package com.example.demo;
+package com.example.demo.assemblers;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+
+import com.example.demo.constants.Status;
+import com.example.demo.controllers.OrderController;
+import com.example.demo.entities.Order;
 
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;

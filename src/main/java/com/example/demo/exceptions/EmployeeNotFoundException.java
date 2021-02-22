@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.example.demo.exceptions;
 
 public class EmployeeNotFoundException extends RuntimeException {
     
     private static final long serialVersionUID = 1L;
 
-    EmployeeNotFoundException(Long id) {
+    public EmployeeNotFoundException(Long id) {
         super("Could not find an employee " + id);
     }
 
