@@ -99,7 +99,7 @@ public class Employee {
         if (this == o) return true;
         if (!(o instanceof Employee)) return false;
         Employee employee = (Employee) o;
-        return
+        return //
             Objects.equals(this.id, employee.id) &&
             Objects.equals(this.firstName, employee.firstName) &&
             Objects.equals(this.lustName, employee.lustName) &&

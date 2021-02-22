@@ -31,23 +31,23 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     CollectionModel<EntityModel<Employee>> all() {
-        List<EntityModel<Employee>> employees = repository.findAll().stream()
+        List<EntityModel<Employee>> employees = repository.findAll().stream() //
             .map(assembler::toModel).collect(Collectors.toList());
 
-        return CollectionModel.of(employees, //
-            linkTo(methodOn(EmployeeController.class).all()).withSelfRel()
-        );
+        return CollectionModel.of(employees, linkTo(methodOn(EmployeeController.class).all()).withSelfRel());
     }
 
     @PostMapping("/employees")
     ResponseEntity<EntityModel<Employee>> newEmployee(@RequestBody Employee newEmployee) {
         EntityModel<Employee> entityModel = assembler.toModel(repository.save(newEmployee));
+
         return ResponseEntity.created(entityModel.getRequiredLink(IanaLinkRelations.SELF).toUri()).body(entityModel);
     }
 
     @GetMapping("/employees/{id}")
     EntityModel<Employee> one(@PathVariable Long id) {
         Employee employee = repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
+
         return assembler.toModel(employee);
     }
 
