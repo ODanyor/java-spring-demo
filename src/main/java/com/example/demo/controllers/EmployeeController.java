@@ -3,7 +3,7 @@ package com.example.demo.controllers;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.example.demo.assemblers.EmployeeModelAssembler;
+import com.example.demo.components.EmployeeModelAssembler;
 import com.example.demo.entities.Employee;
 import com.example.demo.exceptions.EmployeeNotFoundException;
 import com.example.demo.repositories.EmployeeRepository;

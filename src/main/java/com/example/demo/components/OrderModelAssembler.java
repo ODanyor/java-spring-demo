@@ -1,4 +1,4 @@
-package com.example.demo.assemblers;
+package com.example.demo.components;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 

@@ -3,7 +3,7 @@ package com.example.demo.controllers;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.example.demo.assemblers.OrderModelAssembler;
+import com.example.demo.components.OrderModelAssembler;
 import com.example.demo.constants.Status;
 import com.example.demo.entities.Order;
 import com.example.demo.exceptions.OrderNotFoundException;
